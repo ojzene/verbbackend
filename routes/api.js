@@ -16,7 +16,7 @@ const bankService= require('../services/bank/bank.service');
 router.post('/login', auth.optional, authService.login.bind(authService))
 router.get('/current', auth.required, authService.currentUser.bind(authService))
 
-// Partner routes
+// User routes
 router.post("/create", userService.create.bind(userService))
 router.post("/verify", userService.verifyUser.bind(userService))
 router.post("/forgot-password", userService.forgotPassword.bind(userService))
