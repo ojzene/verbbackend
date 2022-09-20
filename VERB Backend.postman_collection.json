@@ -1,0 +1,71 @@
+{
+	"variables": [],
+	"info": {
+		"name": "VERB Backend",
+		"_postman_id": "0973f064-977b-96a2-e37c-72b34dc9c814",
+		"description": "Backend APIs for Verb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login User",
+			"request": {
+				"url": "https://verbbackend.herokuapp.com/api/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phone\": \"07908812603\",\n\t\"password\": \"1245\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"url": "https://verbbackend.herokuapp.com/api/create",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\": \"Kanmi\",\n\t\"lastName\": \"Owolabi\",\n\t\"email\": \"kanmitowolabi@gmail.com\",\n\t\"phone\": \"07908812603\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Verify User",
+			"request": {
+				"url": "https://verbbackend.herokuapp.com/api/verify",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phone\": \"07908812603\",\n\t\"otpType\": \"verification\",\n\t\"otpCode\": \"654321\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
